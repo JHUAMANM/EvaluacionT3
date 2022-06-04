@@ -1,0 +1,45 @@
+<div>
+    <div>
+        <h1 id="IndexHistoria">Listado de Historias</h1>
+    </div>
+    <a href="/veterinaria/create?Id=@ViewBag.Id" class="btn btn-primary">Nueva Historia</a>
+
+    <table class="table">
+        <tr>
+            <th>Fecha R.</th>
+            <th>Nombre</th>
+            <th>Fecha N</th>
+            <th>Sexo</th>
+            <th>Especie</th>
+            <th>Raza</th>
+            <th>Nombre D</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Email</th>
+        </tr>
+
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FechaReg</td>
+                <td>@item.Nombre</td>
+                <td>@item.FechaNac</td>
+                <td>@item.Sexo</td>
+                <td>@item.Especie</td>
+                <td>@item.Raza</td>
+                <td>@item.NombreD</td>
+                <td>@item.Direccion</td>
+                <td>@item.Telefono</td>
+                <td>@item.Email</td>
+               
+                <td>
+                    <a href="/veterinaria/edit?Id=@item.Id" class="btn btn-warning">Editar</a>
+                    <a href="/veterinaria/delete?Id=@item.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+
+        </tbody>
+    </table>
+</div>

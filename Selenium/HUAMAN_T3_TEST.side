@@ -1,0 +1,473 @@
+{
+  "id": "a2dc60b9-869d-46de-b9fa-01670f6888cb",
+  "version": "2.0",
+  "name": "HUAMAN_T3_TEST",
+  "url": "https://localhost:7246/",
+  "tests": [{
+    "id": "5c864faf-4229-4be7-ad35-009e50aa169a",
+    "name": "Abrir pagina de Historias",
+    "commands": [{
+      "id": "a8b6d449-fc87-41d1-a8f5-7b201aa85903",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8dbe030-2668-43e3-919b-79509afbe042",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Historia",
+      "targets": [
+        ["linkText=Crear Historia", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Historia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Veterinaria')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Historia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b592cf72-cd6d-41c3-9f6f-7c64118db27b",
+    "name": "Crear Historia Correcto",
+    "commands": [{
+      "id": "205ceebb-014a-4b35-8d33-0f78e45fd8e5",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69581e53-44c7-40a0-82e7-53357026d48a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Historia",
+      "targets": [
+        ["linkText=Crear Historia", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Historia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Veterinaria')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Historia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e88cdd2-b3f2-42f6-b29d-6acaafa0117d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nueva Historia",
+      "targets": [
+        ["linkText=Nueva Historia", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Nueva Historia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/veterinaria/create?Id=')]", "xpath:href"],
+        ["xpath=//main/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nueva Historia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f1586ef-c64a-4880-b6cc-45ad82784d03",
+      "comment": "",
+      "command": "type",
+      "target": "id=FechaReg",
+      "targets": [],
+      "value": "2022-06-03"
+    }, {
+      "id": "c4d8e392-2ba5-49d7-8d16-393db6a8380f",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Ovejero"
+    }, {
+      "id": "bcb163cd-abb8-41de-a74f-22ea626729bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=FechaNac",
+      "targets": [
+        ["id=FechaNac", "id"],
+        ["name=FechaNac", "name"],
+        ["css=#FechaNac", "css:finder"],
+        ["xpath=//input[@id='FechaNac']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2022-01-22"
+    }, {
+      "id": "b20f31a7-2479-410c-9c05-d77259fce883",
+      "comment": "",
+      "command": "select",
+      "target": "id=Sexo",
+      "targets": [
+        ["id=Sexo", "id"],
+        ["name=Sexo", "name"],
+        ["css=#Sexo", "css:finder"],
+        ["xpath=//select[@id='Sexo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "MACHO"
+    }, {
+      "id": "a2f5dada-6e86-40d4-86eb-7b7ac35401a7",
+      "comment": "",
+      "command": "select",
+      "target": "id=Especie",
+      "targets": [
+        ["id=Especie", "id"],
+        ["name=Especie", "name"],
+        ["css=#Especie", "css:finder"],
+        ["xpath=//select[@id='Especie']", "xpath:attributes"],
+        ["xpath=//div[5]/select", "xpath:position"]
+      ],
+      "value": "AVES"
+    }, {
+      "id": "069d4132-0a30-418d-a7c2-a8fac3fab8bc",
+      "comment": "",
+      "command": "select",
+      "target": "id=Raza",
+      "targets": [
+        ["id=Raza", "id"],
+        ["name=Raza", "name"],
+        ["css=#Raza", "css:finder"],
+        ["xpath=//select[@id='Raza']", "xpath:attributes"],
+        ["xpath=//div[6]/select", "xpath:position"]
+      ],
+      "value": "ALTSTEIRER"
+    }, {
+      "id": "0e432569-a47d-4eb1-a4a9-89954318fa40",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombreD",
+      "targets": [
+        ["id=NombreD", "id"],
+        ["name=NombreD", "name"],
+        ["css=#NombreD", "css:finder"],
+        ["xpath=//input[@id='NombreD']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "Pavel"
+    }, {
+      "id": "6b4896d9-d617-4fb6-90c9-58733c978b18",
+      "comment": "",
+      "command": "type",
+      "target": "id=Direccion",
+      "targets": [
+        ["id=Direccion", "id"],
+        ["name=Direccion", "name"],
+        ["css=#Direccion", "css:finder"],
+        ["xpath=//input[@id='Direccion']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "Jr. El Inca 128"
+    }, {
+      "id": "be35dfd1-ff71-40c7-b1b5-ea83d3acb06a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Telefono",
+      "targets": [
+        ["id=Telefono", "id"],
+        ["name=Telefono", "name"],
+        ["css=#Telefono", "css:finder"],
+        ["xpath=//input[@id='Telefono']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "987456321"
+    }, {
+      "id": "d1925808-81ee-41dd-bb01-cb562abeb842",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "pepe@gmail.com"
+    }, {
+      "id": "efddf602-a1a8-445c-a7dd-8310ecd70de3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d66b1b5-fe89-4a9b-a9d9-42291fb6ddc5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=IndexHistoria",
+      "targets": [
+        ["id=IndexHistoria", "id"],
+        ["css=#IndexHistoria", "css:finder"],
+        ["xpath=//h1[@id='IndexHistoria']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Listado de Historias')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6f9682ca-2de0-49f4-94cc-a7e902e2a0b8",
+    "name": "Editar Historia Correcto",
+    "commands": [{
+      "id": "db974fda-7bab-4613-b494-49b3022de87e",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5271ede6-9d07-4c6a-85e6-444bd6f650f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Historia",
+      "targets": [
+        ["linkText=Crear Historia", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Historia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Veterinaria')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Historia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "726439e6-e1f1-4dfb-8ed1-5ecd45bca4a8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Editar",
+      "targets": [
+        ["linkText=Editar", "linkText"],
+        ["css=tr:nth-child(1) .btn-warning", "css:finder"],
+        ["xpath=//a[contains(text(),'Editar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/veterinaria/edit?Id=2')]", "xpath:href"],
+        ["xpath=//td[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Editar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e43b366-13e8-49f1-b0ec-3b2854c3820d",
+      "comment": "",
+      "command": "type",
+      "target": "id=FechaReg",
+      "targets": [],
+      "value": "2022-06-03"
+    }, {
+      "id": "51cc21c5-fc71-420f-98ea-0ced2739ed57",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Madrilla"
+    }, {
+      "id": "e1476730-18cf-4d34-9965-702540e97619",
+      "comment": "",
+      "command": "type",
+      "target": "id=FechaNac",
+      "targets": [
+        ["id=FechaNac", "id"],
+        ["name=FechaNac", "name"],
+        ["css=#FechaNac", "css:finder"],
+        ["xpath=//input[@id='FechaNac']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2022-02-02"
+    }, {
+      "id": "95e33f1b-4671-495d-8115-7fa5d1338bdb",
+      "comment": "",
+      "command": "select",
+      "target": "id=Sexo",
+      "targets": [
+        ["id=Sexo", "id"],
+        ["name=Sexo", "name"],
+        ["css=#Sexo", "css:finder"],
+        ["xpath=//select[@id='Sexo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "HEMBRA"
+    }, {
+      "id": "9f234739-d002-47c4-8726-3453e8c9b33c",
+      "comment": "",
+      "command": "select",
+      "target": "id=Especie",
+      "targets": [
+        ["id=Especie", "id"],
+        ["name=Especie", "name"],
+        ["css=#Especie", "css:finder"],
+        ["xpath=//select[@id='Especie']", "xpath:attributes"],
+        ["xpath=//div[5]/select", "xpath:position"]
+      ],
+      "value": "AVES"
+    }, {
+      "id": "6fdcd16b-804a-4985-910e-84dcc0b4bc5c",
+      "comment": "",
+      "command": "select",
+      "target": "id=Raza",
+      "targets": [
+        ["id=Raza", "id"],
+        ["name=Raza", "name"],
+        ["css=#Raza", "css:finder"],
+        ["xpath=//select[@id='Raza']", "xpath:attributes"],
+        ["xpath=//div[6]/select", "xpath:position"]
+      ],
+      "value": "ALTSTEIRER"
+    }, {
+      "id": "da2f609b-80e7-4f70-bca0-4e5853f4656a",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombreD",
+      "targets": [
+        ["id=NombreD", "id"],
+        ["name=NombreD", "name"],
+        ["css=#NombreD", "css:finder"],
+        ["xpath=//input[@id='NombreD']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "Jose"
+    }, {
+      "id": "07f4cb5f-69ea-49ed-9c95-fdde67af521c",
+      "comment": "",
+      "command": "type",
+      "target": "id=Direccion",
+      "targets": [
+        ["id=Direccion", "id"],
+        ["name=Direccion", "name"],
+        ["css=#Direccion", "css:finder"],
+        ["xpath=//input[@id='Direccion']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "Jr. Amalia Puga 1111"
+    }, {
+      "id": "c7ab97a3-1e7a-4c33-b97a-975771219680",
+      "comment": "",
+      "command": "type",
+      "target": "id=Telefono",
+      "targets": [
+        ["id=Telefono", "id"],
+        ["name=Telefono", "name"],
+        ["css=#Telefono", "css:finder"],
+        ["xpath=//input[@id='Telefono']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "987456630"
+    }, {
+      "id": "ff535ee4-e7ba-4fce-a6f2-6b97315170c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "maloni@gmail.com"
+    }, {
+      "id": "605463df-0315-41c8-9b8f-9b5ddf0f9585",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "182e0580-e8ad-49c3-af9a-bdd4a4bb36da",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=NuevaHistoria",
+      "targets": [
+        ["id=NuevaHistoria", "id"],
+        ["css=#NuevaHistoria", "css:finder"],
+        ["xpath=//h1[@id='NuevaHistoria']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Nueva Historia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b68b31fe-d7b8-461a-87e7-3ca68fa59c1b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a9a50154-e515-4e0e-ae33-bd5d6eba98f7",
+    "name": "Eliminar Historias",
+    "commands": [{
+      "id": "24206b78-8cdb-4e66-990e-0995fde3e12c",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72021e6c-6df6-4e40-9ab4-58a19a5aef93",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Historia",
+      "targets": [
+        ["linkText=Crear Historia", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Historia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Veterinaria')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Historia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "034bff9c-b965-47e5-84d3-cff961e74d70",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .btn-danger",
+      "targets": [
+        ["css=tr:nth-child(3) .btn-danger", "css:finder"],
+        ["xpath=(//a[contains(text(),'Eliminar')])[3]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/veterinaria/delete?Id=6')]", "xpath:href"],
+        ["xpath=//tr[3]/td[11]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c328a0f-01b6-4473-8c28-77230656ee91",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=IndexHistoria",
+      "targets": [
+        ["id=IndexHistoria", "id"],
+        ["css=#IndexHistoria", "css:finder"],
+        ["xpath=//h1[@id='IndexHistoria']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Listado de Historias')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1018114e-ce82-4caa-8ab0-124d105be80c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5c864faf-4229-4be7-ad35-009e50aa169a"]
+  }],
+  "urls": ["https://localhost:7246/"],
+  "plugins": []
+}

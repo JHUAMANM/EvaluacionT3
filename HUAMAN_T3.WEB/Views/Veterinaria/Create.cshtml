@@ -1,0 +1,104 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h1 id="NuevaHistoria">Nueva Historia</h1>
+            <form action="/veterinaria/guardar" method="post">
+                
+                <div class="mb-3">
+                    <label for="FechaReg">FechaReg</label>
+                    <input type="date" class="form-control" Name="FechaReg" id="FechaReg" value="@Model.FechaReg">
+                    @Html.ValidationMessage("FechaReg")
+                </div>
+
+                <div class="mb-3">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" class="form-control" Name="Nombre" id="Nombre" value="@Model.Nombre">
+                    @Html.ValidationMessage("Nombre")
+                </div>
+                
+                <div class="mb-3">
+                    
+                    <label for="FechaNac">FechaNac</label>
+                    <input type="date" class="form-control" Name="FechaNac" id="FechaNac" value="@Model.FechaNac">
+                    @Html.ValidationMessage("FechaNac")
+                </div>
+                
+                <div class="row-mb-3">
+                    
+                    <label for="Sexo">Sexo</label>
+                    <select class="form-select" name="Sexo" id="Sexo">
+                        <option value="">-- Seleccione el Sexo --</option>
+                        <option value="MACHO">MACHO</option>
+                        <option value="HEMBRA">HEMBRA</option>
+                        
+                    </select>
+                    @Html.ValidationMessage("Sexo")
+                </div> 
+                
+                <div class="row-mb-3">
+
+                    <label for="Especie">Especie</label>
+                    <select class="form-select" name="Especie" id="Especie">
+                        <option value="">-- Seleccione una Especie --</option>
+                        <option value="AVES">AVES</option>
+                        <option value="MAMIFEROS">MAMIFEROS</option>
+                        <option value="AVES">AVES</option>
+                        <option value="PECES">PECES</option>
+
+
+                    </select>
+                    @Html.ValidationMessage("Especie")
+                </div>  
+                
+                <div class="row-mb-3">
+                    
+
+                    <label for="Raza">Raza</label>
+                    <select class="form-select" name="Raza" id="Raza">
+                        <option value="">-- Seleccione una Especie --</option>
+                        <option value="PITBULL">PITBULL</option>
+                        <option value="LABRADOR">LABRADOR</option>
+                        <option value="DALMATA">DALMATA</option>
+                        <option value="ALTSTEIRER">ALTSTEIRER</option>
+
+
+                    </select>
+                    @Html.ValidationMessage("Raza")
+                </div>  
+                                                
+                <div class="mb-3">
+                    
+                    <label for="NombreD">NombreD</label>
+                    <input type="text" class="form-control" Name="NombreD" id="NombreD" value="@Model.NombreD">
+                    @Html.ValidationMessage("NombreD")
+                </div>
+                                                  
+                <div class="mb-3">
+                    
+                    <label for="Direccion">Direccion</label>
+                    <input type="text" class="form-control" Name="Direccion" id="Direccion" value="@Model.Direccion">
+                    @Html.ValidationMessage("Direccion")
+                </div>
+                                                  
+                <div class="mb-3">
+                    
+                    <label for="Telefono">Telefono</label>
+                    <input type="text" class="form-control" Name="Telefono" id="Telefono" value="@Model.Telefono">
+                    @Html.ValidationMessage("Telefono")
+                </div>
+                                                  
+                <div class="mb-3">
+                    
+                    <label for="Email">Email</label>
+                    <input type="text" class="form-control" Name="Email" id="Email" value="@Model.Email">
+                    @Html.ValidationMessage("Email")
+                </div>
+                                                
+                
+                <br>
+                <button class="btn btn-success">Guardar</button>
+                <a href="/nota/index" class="btn btn-danger">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
